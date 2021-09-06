@@ -1,0 +1,317 @@
+html,body{
+   height: 100%;
+    padding: 0;
+    margin: 0;
+}
+*{
+    direction: ltr;
+}
+#app{
+    position: relative;
+    min-height: 100vh;
+}
+.content-wrap{
+    padding-bottom: 120px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 102px;
+}
+
+.fb.btn{
+    width: 80%;
+     padding: 12px;
+    border-radius: 4px;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.fb {
+    background-color: #3B5998;
+    color: white;
+}
+.fb.btn:hover{
+    color: white;
+}
+
+/* NavBar */
+.nav{
+    font-size: 18px;
+}
+
+.padding-left,.padding-right{
+    padding : 20px 20px;
+    width: min-content;
+}
+.navbar-brand{
+    font-size: 40px;
+}
+.header-gif{
+    width: 100%;
+    height: auto;
+}
+.header-gif img{
+    width:100%;
+    height: 100%;
+}
+
+#gallery  img , #shirt-gallary img{
+    height: 380px;
+    max-height: 100%;
+    width: 100%;
+}
+
+#gallery > a.carousel-control-next,
+#gallery > a.carousel-control-prev{
+    background: black;
+}
+#shirt-gallary > a.carousel-control-next,
+#shirt-gallary > a.carousel-control-prev{
+    background: rgb(134, 132, 132);
+}
+
+.carousel-control-prev, .carousel-control-next{
+    height: 20%;
+    top: 40%;
+    padding:10px;
+    width: auto;
+    /* opacity: 0; */
+}
+.carousel-control-prev-icon
+, .carousel-control-next-icon {
+    opacity: 1;
+}
+.carousel-control-prev:hover
+, .carousel-control-next:hover{
+    opacity: 1;
+}
+.mainImg img{
+    width: 90%;
+    height: 100%;
+}
+
+.warn-buy{
+    background: #f8f8f8;
+    color: #4e4a4a;
+    border: 1px solid #e5e5e5;
+    padding:10px;
+}
+
+.other-cat a,
+.other-cat img {
+    width: 100%;
+    height: 100%;
+}
+.other-cat{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    z-index: 2;
+    background: rgb(0, 0,0,0.2 );
+}
+.other-cat:hover  .overlay {
+    opacity: 1;
+  }
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.cat-type a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-weight: bold;
+    font-size: 18px;
+}
+cat-type a:hover , cat-type a:focus {
+    color: rgb(128, 128, 128);
+
+}
+.cat-products a {
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    font-size: 18px;
+}
+.cat-products a:hover, .cat-products a:focus 
+
+{
+    color: rgb(26, 25, 25);
+}
+.details{
+    direction: rtl;
+}
+.details input{
+    direction: rtl;
+}
+.arrow-btn{
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0;
+    /* width: 80px;
+    height: 80px; */
+    
+}
+.arrow-btn i{
+    width: 100%;
+    height: 100%;
+}
+.info p{
+    color: rgb(0, 0, 0);
+}
+.border, .info{
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.border p{
+    margin: 0;
+    padding: 10px;
+
+}
+.normal-img{
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    border-radius: 2%;
+    cursor: pointer;
+}
+/* Style the Image Used to Trigger the Modal */
+#image-link {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+#image-link:hover {opacity: 0.7;}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    width: 500px;
+    height: 600px;
+    max-height: 700px;
+    max-width: 700px;
+    border-radius: 2%;
+  }
+
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    max-height: 150px;
+  }
+
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  button.close-delete{
+    position: absolute;
+    z-index: 1;
+    right: 12px;
+    top: 2px;
+  }
+
+.information {
+    background-color: #ececec;
+    border-radius: 5%;
+    max-height: 91%;
+
+}
+.information div{
+    margin-top: 5%;
+}
+.imgs{
+    max-width: 300px;
+    max-height: 400px;
+}
+
+footer > div.container.pt-1 > section > a{
+    font-size: 25px;
+
+}
+
+@media only screen and (max-width: 700px){
+    .padding-left,.padding-right{
+        padding : 2px 2px;
+    }
+    .navbar-brand{
+        font-size: 20px;
+    }
+    .mainImg{
+        text-align: center;
+        height: 450px;
+    }
+    .modal-content {
+        width: 100%;
+        height: 90%;
+    }
+   
+    
+}

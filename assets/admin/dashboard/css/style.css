@@ -1,0 +1,158 @@
+body{
+    font-family: 'Amiri', serif;
+    direction: ltr;
+}
+#content > nav,
+#accordionSidebar{
+    direction: ltr;
+}
+.sidebar .nav-item .nav-link span {
+    font-size: 1.1rem;
+}
+.sidebar .nav-item .nav-link i{
+    font-size: 1.5rem;
+}
+.sidebar .nav-item.active .nav-link{
+    font-weight: normal;
+}
+.bt-input{
+    margin-top: 10px;
+    display: none;
+}
+.bt-input input{
+    width: 50px;
+}
+
+.imgs{
+    max-width: 200px;
+    max-height: 150px;
+}
+.img-svg{
+  height: 100%;
+  width: 100%;
+}
+
+.normal-img{
+    /* width: 250px;
+    height: 250px; */
+    width: 100%;
+    height: 100%;
+    /* max-width: 250px; */
+    max-height: 400px;
+    cursor: pointer;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.card-header{
+    background: #767676;
+    color: white;
+}
+/* Style the Image Used to Trigger the Modal */
+#image-link {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+#image-link:hover {opacity: 0.7;}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    width: 400px;
+    height: 600px;
+    max-height: 700px;
+    max-width: 700px;
+  }
+
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  button.close-delete{
+    position: absolute;
+    z-index: 1;
+    right: 12px;
+    top: 2px;
+  }
+
+  .dt .parent-img{
+    max-height: 150px;
+  }
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+      html{
+
+          font-size: small;
+      }
+      .avatar{
+        width: 50px;
+        height: 50px;
+      }
+      .modal-content {
+        width: 100%;
+        height: 90%;
+      }
+      .dt .parent-img{
+        height: auto;
+        max-height: 100%;
+      }
+
+  }
+

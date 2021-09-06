@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Size extends Model
+{
+    use HasFactory;
+    protected $fillable = ['size'];
+
+    public function products(){
+        return $this->belongsToMany('App\Models\Product')->withPivot(['length','width','depth','quantity']);
+    }
+
+    function relations() {
+        return $this->hasMany(UserProductSizeQuantity::class)->with('product','user');
+     }
+
+}
